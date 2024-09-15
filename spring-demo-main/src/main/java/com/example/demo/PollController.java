@@ -9,6 +9,7 @@ import java.net.URI;
 import java.util.Collection;
 
 @RestController
+@CrossOrigin
 public class PollController {
     private PollManager manager;
 

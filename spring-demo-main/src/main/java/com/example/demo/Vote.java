@@ -17,6 +17,7 @@ public class Vote {
         this.option = option;
     }
 
+
     public Instant getPublishedAt() {
         return publishedAt;
     }

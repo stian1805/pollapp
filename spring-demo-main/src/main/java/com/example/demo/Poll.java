@@ -20,11 +20,11 @@ public class Poll {
     private User creator;
 
 
-    public Poll(String question, Instant validUntil, List<VoteOption> options, User user) {
+    public Poll(String question, List<VoteOption> options, User user) {
         this.id = uid++;
         this.question = question;
         this.publishedAt = Instant.now();
-        this.validUntil = validUntil;
+        this.validUntil = Instant.now();
         this.options = options;
         this.creator = user;
     }

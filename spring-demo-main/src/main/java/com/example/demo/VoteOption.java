@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class VoteOption {
@@ -13,6 +14,10 @@ public class VoteOption {
     public VoteOption(String caption) {
         this.caption = caption;
         this.presentationOrder = 0;
+        this.votes = new ArrayList<>();
+    }
+
+    public VoteOption() {
     }
 
     public String getCaption() {
